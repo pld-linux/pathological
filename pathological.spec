@@ -1,4 +1,5 @@
 Summary:	A puzzle game involving paths and marbles
+Summary(pl):	Uk³adanka ze ¶cie¿kami i kafelkami
 Name:		pathological
 Version:	1.1.2
 Release:	1
@@ -19,12 +20,18 @@ color. Various board elements such as teleporters, switches, filters,
 etc., make the game interesting and challenging. New levels can be
 created using your favorite text editor.
 
+%description -l pl
+Pathological to wzbogacony klon gry "Logical" firmy Rainbow Arts. Aby
+rozwi±zaæ poziom, nale¿y wype³niæ ka¿de ko³o czterema kafelkami w
+pasuj±cym kolorze. Ró¿ne elementy planszy, takie jak teleporty,
+prze³±czniki, filtry itp. czyni± grê interesuj±c± i wyzywaj±c±. Mo¿na
+tworzyæ nowe poziomy przy u¿yciu ulubionego edytora tekstu.
+
 %prep
 %setup -q
 %patch0 -p1
 
 %build
-rm -f missing
 %{__cc} %{rpmcflags} %{rpmldflags} -o write-highscores write-highscores.c
 
 %install
@@ -50,7 +57,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc README TODO html
 %attr(755,root,root) %{_bindir}/*
 %dir %{_libdir}/%{name}
-%attr(4755,root,games) %{_libdir}/%{name}/bin/write-highscores
+%dir %{_libdir}/%{name}/bin
+%attr(2755,root,games) %{_libdir}/%{name}/bin/write-highscores
 %dir %{_datadir}/%{name}
 %attr(755,root,root) %{_datadir}/%{name}/%{name}.py
 %{_datadir}/%{name}/circuits
