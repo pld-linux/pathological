@@ -1,0 +1,8 @@
+--- pathological-1.1.2/pathological.orig	Fri Jun 20 05:07:25 2003
++++ pathological-1.1.2/pathological	Thu Jul 10 15:05:56 2003
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ 
+ function usage () {
+ 	echo "Usage: $0 [-cb] [-f] [-s] [-q] [highscores-file]"
