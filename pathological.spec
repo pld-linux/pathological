@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Icon:		pathological.xpm
-Source0:	http://dl.sourceforge.net/%{name}/%{name}_%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/pathological/%{name}_%{version}.tar.gz
 # Source0-md5:	40091e7c3a391a52f6b6806770ab944f
 Patch0:		%{name}-bash_not_sh.patch
 URL:		http://pathological.sourceforge.net/
@@ -67,4 +67,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/sounds
 %{_mandir}/man6/*
 %{_pixmapsdir}/*
-%attr(664,root,games) %config(noreplace) %verify(not md5 size mtime) /var/games/pathological_scores
+%attr(664,root,games) %config(noreplace) %verify(not md5 mtime size) /var/games/pathological_scores
