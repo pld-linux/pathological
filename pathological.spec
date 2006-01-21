@@ -5,7 +5,6 @@ Version:	1.1.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Icon:		pathological.xpm
 Source0:	http://dl.sourceforge.net/pathological/%{name}_%{version}.tar.gz
 # Source0-md5:	40091e7c3a391a52f6b6806770ab944f
 Patch0:		%{name}-bash_not_sh.patch
