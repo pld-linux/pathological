@@ -1,0 +1,11 @@
+--- pathological-1.1.3/pathological~	2003-07-17 17:02:19.000000000 +0200
++++ pathological-1.1.3/pathological	2006-10-09 19:54:37.000000000 +0200
+@@ -30,7 +30,7 @@
+ 	fi
+ done
+ 
+-cd /usr/share/games/pathological
++cd /usr/share/pathological
+ 
+ if [ -z "$scoresfile" ]; then
+ 	scoresfile=/var/games/pathological_scores
