@@ -1,13 +1,14 @@
 Summary:	A puzzle game involving paths and marbles
 Summary(pl):	Uk³adanka ze ¶cie¿kami i kafelkami
 Name:		pathological
-Version:	1.1.2
+Version:	1.1.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/pathological/%{name}_%{version}.tar.gz
-# Source0-md5:	40091e7c3a391a52f6b6806770ab944f
-Patch0:		%{name}-bash_not_sh.patch
+Source0:	http://dl.sourceforge.net/pathological/%{name}-%{version}.tar.gz
+# Source0-md5:	76a446080c0fed12baf39354d8e0ce4a
+Source1:	%{name}.desktop
+Patch0:		%{name}-datadir.patch
 URL:		http://pathological.sourceforge.net/
 Requires:	python-pygame
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,10 +38,11 @@ tworzyæ nowe poziomy przy u¿yciu ulubionego edytora tekstu.
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_libdir}/%{name}/bin} \
-	   $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_mandir}/man6} \
+	   $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_pixmapsdir},%{_mandir}/man6} \
 	   $RPM_BUILD_ROOT/var/games
 
 cp -r circuits graphics music sounds $RPM_BUILD_ROOT%{_datadir}/%{name}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install pathological.py $RPM_BUILD_ROOT%{_datadir}/%{name}
 install pathological $RPM_BUILD_ROOT%{_bindir}
 install write-highscores $RPM_BUILD_ROOT%{_libdir}/%{name}/bin
@@ -64,6 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/graphics
 %{_datadir}/%{name}/music
 %{_datadir}/%{name}/sounds
+%{_desktopdir}/%{name}.desktop
 %{_mandir}/man6/*
 %{_pixmapsdir}/*
 %attr(664,root,games) %config(noreplace) %verify(not md5 mtime size) /var/games/pathological_scores
