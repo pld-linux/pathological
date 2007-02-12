@@ -1,5 +1,5 @@
 Summary:	A puzzle game involving paths and marbles
-Summary(pl):	Uk³adanka ze ¶cie¿kami i kafelkami
+Summary(pl.UTF-8):   UkÅ‚adanka ze Å›cieÅ¼kami i kafelkami
 Name:		pathological
 Version:	1.1.3
 Release:	1
@@ -20,12 +20,12 @@ color. Various board elements such as teleporters, switches, filters,
 etc., make the game interesting and challenging. New levels can be
 created using your favorite text editor.
 
-%description -l pl
+%description -l pl.UTF-8
 Pathological to wzbogacony klon gry "Logical" firmy Rainbow Arts. Aby
-rozwi±zaæ poziom, nale¿y wype³niæ ka¿de ko³o czterema kafelkami w
-pasuj±cym kolorze. Ró¿ne elementy planszy, takie jak teleporty,
-prze³±czniki, filtry itp. czyni± grê interesuj±c± i wyzywaj±c±. Mo¿na
-tworzyæ nowe poziomy przy u¿yciu ulubionego edytora tekstu.
+rozwiÄ…zaÄ‡ poziom, naleÅ¼y wypeÅ‚niÄ‡ kaÅ¼de koÅ‚o czterema kafelkami w
+pasujÄ…cym kolorze. RÃ³Å¼ne elementy planszy, takie jak teleporty,
+przeÅ‚Ä…czniki, filtry itp. czyniÄ… grÄ™ interesujÄ…cÄ… i wyzywajÄ…cÄ…. MoÅ¼na
+tworzyÄ‡ nowe poziomy przy uÅ¼yciu ulubionego edytora tekstu.
 
 %prep
 %setup -q
