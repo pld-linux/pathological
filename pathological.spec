@@ -1,5 +1,5 @@
 Summary:	A puzzle game involving paths and marbles
-Summary(pl.UTF-8):   Układanka ze ścieżkami i kafelkami
+Summary(pl.UTF-8):	Układanka ze ścieżkami i kafelkami
 Name:		pathological
 Version:	1.1.3
 Release:	1
