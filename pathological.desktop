@@ -2,10 +2,9 @@
 Name=Pathological
 Comment=A puzzle game involving paths and marbles
 Comment[pl]=Układanka ze ścieżkami i kafelkami
-Icon=pathological.xpm
+Icon=pathological
 Exec=pathological
 Terminal=false
 Type=Application
 Categories=Game;LogicGame;
-Encoding=UTF-8
 # vi: encoding=utf-8
